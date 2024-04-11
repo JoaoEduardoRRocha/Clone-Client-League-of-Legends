@@ -16,6 +16,19 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/",
+            },
+          },
+        ],
+      },
+
       // ... outras regras de loader, se houver
     ],
   },
