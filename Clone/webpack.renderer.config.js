@@ -29,7 +29,16 @@ module.exports = {
         ],
       },
 
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
       // ... outras regras de loader, se houver
     ],
+  },
+
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
 };
