@@ -11,6 +11,9 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
+  "engines": {
+    "node": ">=20.10.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
