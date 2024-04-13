@@ -18,6 +18,10 @@ const createWindow = () => {
     autoHideMenuBar: true,
     resizable: false,
     frame: false,
+    csp: `
+        default-src 'self' http://localhost:9000;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      `,
   });
 
   // and load the index.html of the app.

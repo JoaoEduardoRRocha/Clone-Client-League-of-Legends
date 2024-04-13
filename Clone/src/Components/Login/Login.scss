@@ -1,0 +1,87 @@
+.section-container {
+  display: flex;
+  $btn-auth-color: rgba(239, 239, 239, 1);
+  $btn-placeholder-color: rgba(99, 99, 99, 1);
+  $text-create-account-color: rgba(99, 99, 99, 1);
+  $text-color: rgba(173, 173, 176, 1);
+  $text-signin-color: rgba(10, 10, 10, 1);
+
+  &__login {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 33.3rem;
+  }
+
+  &__auth {
+    display: flex;
+    flex-direction: column;
+    margin: 5.8rem 4.6rem auto 4.6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__sign-in {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 5.8rem 0 2rem 0;
+    color: $text-signin-color;
+  }
+
+  &__input-username,
+  &__input-password {
+    background-color: $btn-auth-color;
+    padding: 1.7rem 1.4rem 1.2rem 1.4rem;
+    border: none;
+    border-radius: 0.4rem;
+
+    &::placeholder {
+      color: $btn-placeholder-color;
+      font-weight: 900;
+      font-size: .8rem;
+    }
+  }
+
+  &__input-password {
+    margin-top: 1.4rem;
+  }
+
+  &__btn-login {
+    margin: 21.1rem auto 6rem auto;
+    border: none;
+    border-radius: 1.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__create-account {
+    color: $text-create-account-color;
+    font-weight: 900;
+    font-size: .8rem;
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    color: $text-color;
+    font-weight: 900;
+    font-size: .8rem;
+    text-align: center;
+    max-width: 20.6rem;
+  }
+
+  &__wallpeaper {
+    background-color: black;
+    width: 102rem;
+    height: 72rem;
+  }
+}
+
