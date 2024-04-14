@@ -1,7 +1,19 @@
 import React from "react";
+import InputAccess from "./../../common/InputAccess/InputAccess";
 import "./SignIn.scss";
 
 const SignIn = () => {
+  const [inputUsername, setInputUsername] = React.useState("");
+  const [inputPassword, setInputPassword] = React.useState("");
+
+  const handleInputUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputUsername(event.target.value);
+  };
+
+  const handleInputPasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputPassword(event.target.value);
+  };
+
   return (
     <>
       <section className="section-container">
@@ -21,15 +33,22 @@ const SignIn = () => {
             </svg>
 
             <h1 className="section-container__sign-in">Sign in</h1>
-            <input
-              className="section-container__input-username"
+
+            <InputAccess
+              label="username"
+              value={inputUsername}
+              onChange={handleInputUsernameChange}
               type="text"
-              placeholder="USERNAME"
+              id="sign-in-username"
             />
-            <input
-              className="section-container__input-password"
+
+            <InputAccess
+              label="password"
+              value={inputPassword}
+              onChange={handleInputPasswordChange}
               type="password"
-              placeholder="PASSWORD"
+              id="sign-in-password"
+              hasToggleButton={true}
             />
           </div>
 
