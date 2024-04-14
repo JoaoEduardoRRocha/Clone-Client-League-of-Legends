@@ -6,8 +6,8 @@
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
+    "package": "lint:fix && electron-forge package",
+    "make": "lint:fix && electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
