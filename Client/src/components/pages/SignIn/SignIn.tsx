@@ -1,7 +1,7 @@
 import React from "react";
-import "./Login.scss";
+import "./SignIn.scss";
 
-const Login = () => {
+const SignIn = () => {
   return (
     <>
       <section className="section-container">
@@ -55,8 +55,8 @@ const Login = () => {
             <p>CREATE ACCOUNT</p>
           </div>
           <p className="section-container__text">
-            This app is made by João Eduardo and Matheus Mattana, two League
-            fans who have no connection to the original product
+            This app is made by João Eduardo and Matheus Mattana, two League fans who have no
+            connection to the original product
           </p>
         </div>
 
@@ -66,4 +66,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;
